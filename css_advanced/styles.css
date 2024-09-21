@@ -72,73 +72,53 @@ section p {
     margin-bottom: 20px;
 }
 
+.quote-section {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px; /* Spacing around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin above and below */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.quote-section img {
+    height: 80px; /* Adjust size for the image */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.quote-content {
+    flex: 1; /* Allow text block to take remaining space */
+}
+
+.quote-content blockquote {
+    font-size: 1.5em; /* Adjust quote size */
+    color: #555; /* Color for the quote */
+    margin: 0; /* Remove default margins */
+    quotes: "“" "”" "‘" "’"; /* Custom quotes */
+}
+
+.quote-content blockquote:before {
+    content: open-quote; /* Open quote */
+}
+
+.quote-content blockquote:after {
+    content: close-quote; /* Close quote */
+}
+
+.quote-author {
+    font-weight: bold; /* Bold for the author */
+    margin-top: 10px; /* Space above author name */
+}
+
+.quote-text {
+    color: #777; /* Lighter color for additional text */
+    margin-top: 5px; /* Space above text */
+}
+
 article {
     flex: 2;
     background-color: #f4f4f4;
     padding: 20px;
-    overflow-y: auto;
-    margin-right: 10px; 
-    border-radius: 8px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-article h2, article h3 {
-    color: #444;
-}
-
-article p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-article table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-article table th, article table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-article table th {
-    background-color: #333;
-    color: white;
-}
-
-aside {
-    flex: 1;
-    background-color: #e4e4e4;
-    padding: 20px;
-    overflow-y: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-article a, aside a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-article a:hover, aside a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-    
-    article {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-}
+    over
