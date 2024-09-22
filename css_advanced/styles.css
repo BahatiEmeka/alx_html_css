@@ -328,4 +328,8 @@ footer {
     .membership-item {
         flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
     }
+
+    .faq-row {
+        flex: 1 1 calc(100% - 20px); /* Stack items on smaller screens */
+    }
 }
