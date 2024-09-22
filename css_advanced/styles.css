@@ -191,6 +191,70 @@ section p {
     color: #666; /* Color for rating text */
 }
 
+.membership-section {
+    padding: 40px; /* Spacing around the section */
+    background-color: #f4f4f4; /* Background color for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin above and below */
+}
+
+.membership-section h2 {
+    color: #333; /* Color for the heading */
+    font-size: 2em; /* Size of the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.membership-items {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out the items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.membership-item {
+    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% minus margin */
+    margin: 10px; /* Space between items */
+    background-color: #ffffff; /* Background color for the item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the item */
+    text-align: center; /* Center text within item */
+}
+
+.membership-item img {
+    width: 100%; /* Image takes full width of item */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.membership-item h3 {
+    color: #444; /* Color for the item title */
+    font-size: 1.5em; /* Size of the item title */
+    margin: 10px 0; /* Space above and below the title */
+}
+
+.membership-item p {
+    color: #666; /* Color for the item text */
+    margin-bottom: 15px; /* Space below the text */
+}
+
+.membership-button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.membership-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
 article {
     flex: 2;
     background-color: #f4f4f4;
@@ -259,5 +323,9 @@ footer {
     article {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    
+    .membership-item {
+        flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
     }
 }
